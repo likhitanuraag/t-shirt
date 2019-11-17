@@ -1,0 +1,16 @@
+a {
+    color: blue;
+    background-color: burlywood;
+}
+
+img {
+    display: flexbox;
+    transition: transform .2s;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+img:hover {
+    transform: scale(1.5); 
+}
