@@ -14,3 +14,7 @@ img {
 img:hover {
     transform: scale(1.5); 
 }
+
+.image1 {
+    padding: 2em;
+}
