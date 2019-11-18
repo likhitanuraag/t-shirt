@@ -3,26 +3,37 @@ a {
     background-color: burlywood;
 }
 
-.topnav{
-    background-color: black;
-    overflow: hidden;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.topnav a{
-    float: left;
-    color: red;
-    text-align: center;
-    padding: 14px 16px;
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    font-family: 'PT Serif', serif;
+    background-color: mediumpurple
+}
+
+.logo {
+    color: cornsilk; 
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 22px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.nav-links a {
+    color: cornsilk;
     text-decoration: none;
-    font-size: 20px;
-}
-
-.topnav a:hover {
-    background-color: red;
-    color: black;
-}
-
-.topnav a.active {
-    background-color: black;
-    color: white;
+    letter-spacing: 3px;
+    font-weight: bold;
 }
