@@ -3,22 +3,6 @@ a {
     background-color: burlywood;
 }
 
-img {
-    display: flexbox;
-    transition: transform .2s;
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
-}
-
-img:hover {
-    transform: scale(1.5); 
-}
-
-.image1 {
-    padding: 2em;
-}
-
 *{
     margin: 0;
     padding: 0;
@@ -89,24 +73,23 @@ img:hover {
 }
 
 @media screen and (max-width: 600px) {
-    .navbar a:not(:first-child){display:none;}
-    .navbar a.icon {
+    .topnav a:not(:first-child){display:none;}
+    .topnav a.icon {
         float: right;
         display: block;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .navbar.responsive {position: relative;}
-    .navbar.responsive a.icon {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
         position: absolute;
         right: 0; 
         top: 0; 
     }
-    .navbar.responsive a {
+    .topnav.responsive a {
         float: none;
         display: block; 
         text-align: left; 
     }
 }
-
