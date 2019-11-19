@@ -1,3 +1,8 @@
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
 a {
     color: blue;
     background-color: burlywood;
@@ -110,3 +115,16 @@ img:hover {
     }
 }
 
+.carousel{
+    background: #2f4357; 
+    margin-top:20px;
+}
+
+.carousel-item {
+    text-align: center;
+    min-height: 280px; 
+}
+
+.container {
+    margin:20px; 
+}
