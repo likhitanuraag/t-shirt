@@ -100,9 +100,10 @@ a {
 }
 
 .carousel-container{
-    width: 80%; 
+    width: 76%; 
     margin: auto; 
     border: 5px solid black;
+    overflow: hidden;
 }
 
 .carousel-slider{
@@ -111,3 +112,5 @@ a {
     height: 500px; 
 
 }
+
+
