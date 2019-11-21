@@ -47,7 +47,7 @@ a {
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn{
-    background-color: red;  
+    background-color: orange;  
 }
 
 .dropdown-content {
@@ -70,7 +70,7 @@ a {
 }
 
 .dropdown-content a:hover {
-    background-color: red;
+    background-color: orange;
 }
 
 .dropdown:hover .dropdown-content {
@@ -107,7 +107,7 @@ a {
 
 .carousel-container{
     width: 74%; 
-    margin: auto; 
+    margin: 0px 0px 0px 0px; 
     border: 5px solid black;
     overflow: hidden;
     position: relative;
@@ -146,3 +146,11 @@ a {
     border: none;
     background-color: white;
 }
+
+.companylogo{
+    height: 175px;
+    width: 175px;
+    float: left;
+    margin-left: 0px 0px 0px 0px;
+}
+
