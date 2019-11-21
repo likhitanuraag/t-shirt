@@ -107,7 +107,7 @@ a {
 }
 
 .carousel-container{
-    width: 76%; 
+    width: 74%; 
     margin: auto; 
     overflow: hidden;
     position: relative;
@@ -119,14 +119,30 @@ a {
     height: 500px; 
 }
 
-#prevBtn{
+#prevBtn {
     position: absolute;
     top: 50%;
     z-index: 10px;
     left: 5%;
-    font-size: 30px;
-    color: white;
-    opacity: 0.5;
+    font-size: 20px;
+    color: black;
+    opacity: 1;
     cursor: pointer;
+    border: none;
+    background-color: white;
+}
+
+
+#nextBtn{
+    position: absolute;
+    top: 50%;
+    z-index: 10px;
+    right: 5%;
+    font-size: 20px;
+    color: black;
+    opacity: 1;
+    cursor: pointer;
+    border: none;
+    background-color: white;
 }
 
