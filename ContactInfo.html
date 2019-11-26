@@ -2,7 +2,8 @@
 <html>
     <head>
         <title>products</title>
-        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
             <header>
@@ -30,19 +31,42 @@
         <center>
             <h2>Contact Information</h2><br><br><br><hr><br>
         </center>
-        <h3>Telephone:</h3>
-        <UL>
-            <LI>Tel: 051234134</LI>
-        </UL><br>
-        <h3>Fax:</h3>
-        <UL>
-            <LI>Fax: 113415323</LI>
-        </UL><br>
-        <h3>Address:</h3>
-        <UL>
-            <LI>Address: 5 Terning Dr</LI>
-        </UL>
-    <div><a href="index.html">click to go back</a></div>
+        <h4 style="color: whitesmoke">Telephone: 051234134</h4><br>
+        <h4 style="color: whitesmoke">Fax: 113415323</h4><br>
+        <h4 style="color:whitesmoke">Address: 8 Carex Dr, Kalkallo Melbourne VIC 3064 </h4><br><br>
+        <!-- Action Box-->
+        <form action="/action_page.php">
+            <div id="responsebox">
+            <font color="whitesmoke">Email:</font><br>
+            <input type="text" name="email"><br>
+            <font color="whitesmoke">Subject:</font><br>
+            <input type="text" name="subject"><br>
+            <font color="whitesmoke">Message:</font><br>
+            <input type="text" name="message" style="height:90px"><br> 
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+    <div class="clickbackhome"><a href="index.html">click here to go back</a></div>
+    <div class="googlemaps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3258.433444887145!2d144.95504438273852!3d-37.53517077541886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad652a94b26e649%3A0x60729cac57aca683!2sCarex%20Dr%2C%20Kalkallo%20VIC%203064!5e0!3m2!1sen!2sau!4v1574746892120!5m2!1sen!2sau" width="500" height="350" frameborder="0"></iframe>
+    </div>
     </body>
-    <footer>end of page</footer>
+    <footer> 
+            <div class="wrapper">
+                <nav>
+                    <ul>
+                        <li> <a href="forum.html">Forum</a></li>
+                        <li> <a href="careers.html">Careers</a></li>
+                        <li> <a href="about.html">About us</a></li>
+                        <li> <a href="ContactInfo.html">Contact Information</a></li>
+                        <li> <a href="ReturnPolicy.html">Return Policy</a></li>
+                        <li> <a href="#" target="blank"><i class="fa fa-facebook"></i></a></li>
+                        <li> <a href="#" target="blank"><i class="fa fa-twitter"></i></a></li>
+                        <li> <a href="#" target="blank"><i class="fa fa-google-plus"></i></a></li>
+                        <li> <a href="#" target="blank"><i class="fa fa-youtube"></i></a>
+                        <li> <a href="#" target="blank"><i class="fa fa-instagram"></i></li></a> 
+                    </ul>
+                </nav>
+            </div>
+        </footer>
 </html>

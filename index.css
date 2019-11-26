@@ -23,7 +23,7 @@ a {
 
 .navbar a{
     float: left;
-    font-size: 16px; 
+    font-size: 18px; 
     color: white;
     text-align: center;
     padding: 14px 16px;
@@ -37,7 +37,7 @@ a {
 }
 
 .dropdown .dropbtn {
-    font-size: 16px; 
+    font-size: 18px; 
     border: none;
     outline: none;
     color: white;
@@ -112,27 +112,28 @@ a {
 
 }
 
-#prevBtn {
+
+
+#nextBtn{
     position: absolute;
-    top: 50%;
+    top: 60%;
     z-index: 10px;
-    left: 5%;
+    right: 5%;
     font-size: 20px;
-    color: black;
+    color: white;
     opacity: 1;
     cursor: pointer;
     border: none;
     background-color: transparent;
 }
 
-
-#nextBtn{
+#prevBtn {
     position: absolute;
-    top: 50%;
+    top: 60%;
     z-index: 10px;
-    right: 5%;
+    left: 5%;
     font-size: 20px;
-    color: black;
+    color: white;
     opacity: 1;
     cursor: pointer;
     border: none;
@@ -179,4 +180,35 @@ a {
 .row {
     display: flex;
 }
+
+/*---Footer---*/
+footer{
+    width: 100%;
+    background-color: black;
+    padding: 60px 0px;
+}
+
+footer nav {
+    float: left; 
+}
+
+footer nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+    list-style: none;
+}
+
+footer nav ul li a {
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+}
+
+
+
+
+
 
