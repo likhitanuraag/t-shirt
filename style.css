@@ -201,7 +201,7 @@ footer nav ul li a {
 /*return button near footer*/
 .clickbackhome a{
     background-color: transparent;
-    color: orange;
+    color: palegoldenrod;
     text-decoration: none;
 }
 
@@ -219,3 +219,6 @@ footer nav ul li a {
     right: -12%; 
 }
 
+#vision{
+    float: none; 
+}
