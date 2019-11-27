@@ -31,9 +31,14 @@
         <center>
             <h2>Contact Information</h2><br><br><br><hr><br>
         </center>
+        <div id=contactdetails>
         <h4 style="color: whitesmoke">Telephone: 051234134</h4><br>
         <h4 style="color: whitesmoke">Fax: 113415323</h4><br>
-        <h4 style="color:whitesmoke">Address: 8 Carex Dr, Kalkallo Melbourne VIC 3064 </h4><br><br>
+        <h4 style="color:whitesmoke">Email: TshirtCo@hotmail.com</h4><br>
+        <h4 style="color:whitesmoke">Address: 8 Carex Dr, Kalkallo Melbourne VIC 3064 </h4><br>
+        <p style="color: whitesmoke">Contact us below if you have any enquiry about our products and <br>our staff will respond within 1 working day.</p><br>
+        </div>
+        <div id="map"></div>
         <!-- Action Box-->
         <form action="/action_page.php">
             <div id="responsebox">
@@ -42,14 +47,27 @@
             <font color="whitesmoke">Subject:</font><br>
             <input type="text" name="subject"><br>
             <font color="whitesmoke">Message:</font><br>
-            <input type="text" name="message" style="height:90px"><br> 
-            </div>
-            <input type="submit" value="Submit">
-        </form>
+            <textarea name="message" rows="10" cols="30" style="width:400px"></textarea><br><br>
+            <input type="submit" value="Submit" style="width:50px;">
+            </div>   
+        </form><br><br>
     <div class="clickbackhome"><a href="index.html">click here to go back</a></div>
-    <div class="googlemaps">
-        <iframe src="GOOGLE MAPS" width="500" height="350" frameborder="0"></iframe>
-    </div>
+    <script>
+        function initMap() {
+            var location = {lat:-37.535200, lng:144.956680};
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 4,
+                center: location
+            });
+            var marker = new google.maps.Marker({
+                position: location, 
+                map: map
+            })
+            
+            }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeWvd9uksK6Y3rIqD9Hcff_mOhAML1Qiw&callback=initMap"
+    type="text/javascript"></script>
     </body>
     <footer> 
             <div class="wrapper">

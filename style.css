@@ -164,7 +164,7 @@ a {
 }
 
 /*---Footer---*/
-footer{
+footer{ 
     width: 100%;
     background-color: black;
     padding: 60px 0px;
@@ -190,11 +190,13 @@ footer nav ul li a {
 }
 
 /*--Google Maps Styling--*/
-iframe {
+#map {
     position: absolute;
     border:2px solid black;  
-    top: 190px; 
+    top: 200px; 
     right: 40px; 
+    height: 400px;
+    width: 50%;
 }
 /*return button near footer*/
 .clickbackhome a{
@@ -204,7 +206,16 @@ iframe {
 }
 
 /*Action Box*/
+#responsebox{
+    position: relative;
+    right: -12%;
+}
 #responsebox input{
-    width:300px;
+    width:400px;
+}
+
+#contactdetails{
+    position: relative;
+    right: -12%; 
 }
 
