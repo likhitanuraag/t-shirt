@@ -219,6 +219,23 @@ footer nav ul li a {
     right: -12%; 
 }
 
-#vision{
-    float: none; 
+#vision p{
+    position: relative; 
+    right: -1%;
+}
+
+#vision ul li{
+    position: relative; 
+    font-size: 18px;
+    margin-left: 10px;
+    list-style-type: disc;
+    color: palegoldenrod;
+    right: -3%;
+
+}
+
+#abouttext p {
+    line-height: 1.4; 
+    position: relative; 
+    right: -1%;
 }
