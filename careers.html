@@ -4,6 +4,24 @@
         <title>t-shirts</title>
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style media="screen">
+            #upload-button{
+                padding: 10px;
+                color: white;
+                background-color: #009578;
+                border: 1px solid black; 
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            #upload-button:hover{
+                background-color: #00b28f;
+            }
+            #custom-text{
+                margin-left: 10px;
+                font-family: 'PT Serif', serif;
+                color: palegoldenrod;
+            }
+        </style>
     </head>
     <body>
             <header>
@@ -29,9 +47,33 @@
                 <a href="index.html"><img src="https://www.freelogodesign.org/file/app/client/thumb/238dc1f8-0d1a-477a-92ba-1ee159a9a7cc_200x200.png?1574342818946" alt="company logo" class="companylogo"></a>
         <br><br>
         <center>
-            <h2>Careers</h2><br><br><br><hr><br>
+            <h2 style="color:palegoldenrod">Careers</h2><br><br><br><hr><br>
         </center>
+        <input type="file" id="File-upload" hidden="hidden"/>
+        <button type="button" id="upload-button">CHOOSE A FILE</button>
+        <span id="custom-text">No file chosen, yet</span><br><br>
         <div class="clickbackhome"><a href="index.html">click here to go back</a></div>
+
+        <script type="text/javascript">
+            const FileUploadBtn = document.getElementById("File-upload");
+            const uploadBtn = document.getElementById("upload-button");
+            const textBtn = document.getElementById("custom-text");
+
+            uploadBtn.addEventListener("click", function(){
+                FileUploadBtn.click();
+            });
+
+            FileUploadBtn.addEventListener("change", function(){
+                if(FileUploadBtn.value){
+                    textBtn.innerHTML = FileUploadBtn.value.match(/[\/\\]([\w\d\s\.\-\(\)]+)$/)[1];
+                } 
+                else{
+                    textBtn.innerHTML = "No file chosen, yet";
+                }
+
+            });
+        
+        </script>
     </body>
     <footer> 
             <div class="wrapper">
