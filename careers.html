@@ -21,6 +21,10 @@
                 font-family: 'PT Serif', serif;
                 color: palegoldenrod;
             }
+            #filechooserbtn{
+                position: relative;
+                right: -15%;
+            }
         </style>
     </head>
     <body>
@@ -49,9 +53,40 @@
         <center>
             <h2 style="color:palegoldenrod">Careers</h2><br><br><br><hr><br>
         </center>
-        <input type="file" id="File-upload" hidden="hidden"/>
-        <button type="button" id="upload-button">CHOOSE A FILE</button>
-        <span id="custom-text">No file chosen, yet</span><br><br>
+        <form action="/action_page.php">
+            <div id="newemployee">
+            <font color="palegoldenrod">First Name:</font><br>
+            <input type="text" name="First Name"><br><br>
+            <font color="palegoldenrod">Last Name:</font><br>
+            <input type="text" name="Last Name"><br><br>
+            <font color="palegoldenrod">Email:</font><br>
+            <input type="text" name="Email"><br><br>
+            <font color="palegoldenrod">Country:</font><br>
+            <input type="text" name="country"><br><br>
+            <font color="palegoldenrod">State:</font><br>
+            <input type="text" name="State"><br><br>
+            <font color="palegoldenrod">City:</font><br>
+            <input type="text" name="City"><br><br>
+            <font color="palegoldenrod">Home Address:</font><br>
+            <input type="text" name="Address"><br><br>
+            <font color="palegoldenrod">Write your cover letter below:</font><br>
+            <textarea name="message" rows="10" cols="30" style="width:400px"></textarea><br><br>
+            <font color="palegoldenrod">Upload your resume:</font><br><br>
+            <div id="filechooserbtn">
+                <input type="file" id="File-upload" hidden="hidden"/>
+                <button type="button" id="upload-button">CHOOSE A FILE</button>
+                <span id="custom-text">No file chosen, yet</span>
+                </div>
+            <br>
+            <input type="submit" value="Submit" style="width:50px;cursor:pointer;">
+            </div>   
+        </form>
+        <h2 style="color:palegoldenrod;position:absolute;right:40%;top:33%;"><u>Why work with us?</u></h2>
+        <p style="color:palegoldenrod;position:absolute;right:5%;top:39%;line-height:30px;">We admire hard workers and people who are motivated to get the job done. Anyone with a passion<br>
+        is encouraged to apply. Experience and skills in customer service and stocking shelves is desired, <br> but not required. No matter what stage you are at in your life,
+        we would love to hear from you<br> and see if you are our perfect fit! We bring diversity to the table and this is an open invitation for <br>
+        anyone to apply!</p>
+        <img src="https://p0.piqsels.com/preview/12/624/878/coaching-coders-coding-company.jpg" style="position:absolute;width:48%;height:55%;right:5%;top:65%;">
         <div class="clickbackhome"><a href="index.html">click here to go back</a></div>
 
         <script type="text/javascript">

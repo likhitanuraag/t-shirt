@@ -279,3 +279,17 @@ footer nav ul li a {
     color:palegoldenrod;
     right: -6%; 
 }
+
+/*Careers page Action Box*/
+#newemployee{
+    position: relative;
+    right: -12%;
+}
+#newemployee input{
+    width:400px;
+}
+
+#newemployee #filechooserbtn{
+    position: relative;
+    right: -5%;
+}
