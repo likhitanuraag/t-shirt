@@ -200,6 +200,7 @@ footer nav ul li a {
 }
 
 .container-row{
+    position: relative;
     width: 90%;
     overflow: hidden;
     margin: 20px auto;
@@ -292,4 +293,61 @@ footer nav ul li a {
 #newemployee #filechooserbtn{
     position: relative;
     right: -5%;
+}
+
+.post-page-numbers a{
+    background-color: transparent;
+    text-decoration: none;
+    color: palegoldenrod;
+}
+
+/*Container row 2 for Original2*/
+.container-row2{
+    position: relative;
+    width: 90%;
+    overflow: hidden;
+    margin: 20px auto;
+    padding: 20px 0px;
+}
+
+.container-row2 ul{
+    padding: 0px;
+    margin: 0px;
+}
+
+.container-row2 ul li {
+    list-style: none;
+    float: left;
+    width: 20%;
+    height: 350px;
+    margin: 40px 30px 0px 20px;
+    box-sizing: border-box;
+    border: 3px solid #807979;
+}
+
+.container-row2 ul li:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.container-row2 ul li img {
+    width: 100%;
+    height: 250px;
+    margin: 20px 0px 0px 0px;
+}
+
+.container-row2 ul li .title-img{
+    width: 100%;
+    height: 35px;
+    line-height: 40px; 
+    background: black;
+    color: white; 
+    text-align: center;
+}
+
+.container-row2 ul li .price{
+    width: 100%;
+    line-height: 35px;
+    color: palegoldenrod;
+    background: green;
 }
