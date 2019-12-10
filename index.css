@@ -116,6 +116,9 @@ a {
     display: block;
   }
 
+  @media screen and (max-width: 907px) {
+
+  }
 /*a {
     color: blue;
     background-color: burlywood;
