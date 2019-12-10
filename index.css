@@ -76,11 +76,10 @@ a {
 
 .dropdown .dropbtn {
     top: 50%;
-    font-size: 18px; 
+    font-size: 20px; 
     border: none;
     outline: none;
-    color: white;
-    padding: 18%; 
+    color: white; 
     background-color: inherit;
     margin:0; 
     font-family: 'PT Serif', serif;
