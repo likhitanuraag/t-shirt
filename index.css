@@ -25,13 +25,18 @@ body {
     display: flex;
     list-style: none;
     margin: 0;
-    font-size: 0.7em;
+    font-size: 0.6em;
+}
+
+nav ul li a:hover{
+    color:orange;
 }
 
 .companylogo{
-    height: 33px;
-    width: 90.5px;
+    height: 70px;
+    width: 190.7px;
     margin-left: auto;
+    padding: 0px 0px 20px 0px;
 }
 
 .push {
@@ -39,7 +44,7 @@ body {
 }
 
 li {
-    padding: 20px;
+    padding: 40px 20px 0px 20px;
 }
 
 a {
@@ -47,8 +52,10 @@ a {
     text-decoration: none;
 }
 
-.push {
-    margin-left: auto;
+.navbar-right{
+    display: flex;
+    list-style: none;
+    float: right;
 }
 
 .black {
@@ -69,13 +76,14 @@ a {
 
 .dropdown .dropbtn {
     top: 50%;
-    font-size: 20px; 
+    font-size: 1.0em; 
     border: none;
     outline: none;
     color: white; 
     background-color: inherit;
     margin:0; 
     font-family: 'PT Serif', serif;
+    cursor: pointer;
 }
   
   /* Dropdown content (hidden by default) */
@@ -97,10 +105,10 @@ a {
     display: block;
     text-align: left;
   }
-  
   /* Add a grey background color to dropdown links on hover */
   .dropdown-content a:hover {
     background-color: #ddd;
+    color: white;
   }
   
   /* Show the dropdown menu on hover */
@@ -169,8 +177,9 @@ a {
     .dropdown, .dropdown-content, .dropbtn {
         margin-left: auto;
         font-size: 20px;
+        cursor: pointer;
     }
-    button {
+    button{
         font-size: 15px;
     }
   }
