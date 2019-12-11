@@ -115,7 +115,7 @@ a {
     display: block;
   }
 
-  @media screen and (max-width: 1031px) {
+  @media screen and (max-width: 1100px) {
     #logo {
         display: none;
     }
@@ -183,10 +183,9 @@ a {
     }
   }
 
-  @media screen and (max-width: 686px) {
-    #li-3, #li-4 {
+  @media screen and (max-width: 502px) {
+    #li-7, #li-1, #li-2 {
         display: none;
-        position: relative;
     }
 
     /*img#logo {
@@ -200,12 +199,20 @@ a {
         width: 100%;
     }
     .main-nav {
+        padding: 5%;
         font-size: 15px;
+        width: 100%;
     }
 
-    .dropdown {
-        margin-left: auto;
+    #li-5, #li-8, #li-9 {
+        padding-left: 10px;
+        padding-top: 15px;
+        padding-right: 5px;
+        padding-bottom: 0%;
+        margin: 0%;
         font-size: 15px;
+        font-style: normal;
+        list-style: none;
     }
   }
 /*a {
