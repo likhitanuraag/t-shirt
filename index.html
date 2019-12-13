@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>t-shirts</title>
         <link rel="stylesheet" type="text/css" href="index.css">
+        <script type="text/javascript" src="nav.js"></script>
         <style>
             img{
                 width: 100%;
@@ -12,12 +13,13 @@
                 object-fit: fill;
             }
         </style>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-<!--Nav Bar-->
+<!--Nav Bar DESKTOP-->
         <nav class="zone black">
-            <ul class="main-nav">
+            <ul id="desktop-nav" class="main-nav">
                 <li><a href="index.html"><img id="logo" src="./logo.png" alt="company logo" class="companylogo"></a></li>
                 <li id="li-1"><a href="index.html">Home</a></li>
                 <li id="li-2"><a href="Shopall.html">Shop All</a></li>
@@ -36,9 +38,36 @@
                 <ul class="navbar-right">
                     <li id="li-8"><a href="#"><i class="fa fa-user-plus"> Sign-Up</i></a></li>
                     <li id="li-9"><a href="#"><i class="fa fa-sign-in"></i> Login</a></li>
-                </ul>   
-            </ul>
+                </ul>
+
+                <div id="mobile-view" class="btn-group push">
+                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onresize="mobile_nav()">
+                        <img id="menu_toggle" src="./List_menu_toggle.png" alt="">
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <button class="dropdown-item" type="button"><a href="index.html">Home</a></button>
+                      <button class="dropdown-item" type="button"><a href="Shopall.html">Shop All</a></button>
+                      <button class="dropdown-item" type="button"><a href="Men.html">Men</a></button>
+                      <button class="dropdown-item" type="button"><a href="Women.html">Women</a></button>
+                      <button class="dropdown-item" type="button"><a href="about.html">About</a></button>
+                      <button class="dropdown-item" type="button"><a href="ContactInfo.html">Contact</a></button>
+                      <button class="dropdown-item" type="button"><a href="#"><i class="fa fa-user-plus"> Sign-Up</i></a></button>
+                      <button class="dropdown-item" type="button"><a href="#"><i class="fa fa-sign-in"></i> Login</a></button>
+                      <button class="dropdown-item" type="button"><div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Products
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                              <button class="dropdown-item" type="button"><a href="Basic.html">Basic</a></button>
+                              <button class="dropdown-item" type="button"><a href="Custom.html">Custom</a></button>
+                              <button class="dropdown-item" type="button"><a href="Original.html">Original</a></button>
+                            </div>
+                          </div></button>
+                    </div>
+                  </div>
+            </ul>       
           </nav>
+
         <center>
         <div class= "welcomingnotes">
                 <h1 style="color:whitesmoke">Welcome to T-ShirtCo.</h1>
@@ -48,6 +77,7 @@
         </div>
         <br>
 <!--Carousel slider-->
+    <div class="carousel-full-div">
         <div class="carousel-container">
             <div class="carousel-slide">
                 <img src="https://cdn.shopify.com/s/files/1/0094/2479/7753/files/Summer_Collection-website_banner_2048x_com_dda0f98d-245e-478a-aa07-6bb8b3045a9c_1024x.jpg?v=1561787656" id="lastClone" alt="T-shirt model 3">
@@ -61,6 +91,7 @@
             <button id="prevBtn"><i class="fa fa-angle-left"></i></button>
             <button id="nextBtn"><i class="fa fa-angle-right"></i></button>
         </div>
+    </div>
         <br><br><br>
     </center>
     <div class="row">
@@ -70,7 +101,7 @@
         <div class="column">
             <a href="!"><img src="https://cdn.shopify.com/s/files/1/0090/2447/1140/files/Junior-Tops-Box-Banner_635x.jpg?v=1572640783" alt="Junior Tops for every occasion" style="width:100%"></a>
         </div>
-        <div class="column">
+        <div class="column weed-shirt">
             <a href="!"><img src="https://www.rastaempire.com/App_Themes/Skin_1/images/home/ffe/FFE-Smaller-420.jpg" alt="Weed shirt" style="width:100%"></a>
         </div>
     </div>
@@ -81,6 +112,9 @@
                 <LI><a href="Original.html">Original</a></LI><br>
             </OL>
     <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     </body>
     <footer> 
         <div class="wrapper">

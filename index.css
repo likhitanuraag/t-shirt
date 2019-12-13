@@ -34,7 +34,7 @@ body {
 
 .companylogo{
     height: 70px;
-    width: 190.7px;
+    width: 150.7px;
     margin-left: auto;
     padding: 0px 0px 20px 0px;
 }
@@ -115,8 +115,23 @@ a {
     display: block;
   }
 
+  #menu_toggle {
+      width: 30px;
+      height: 30px;
+  }
+
+  @media screen and (max-width: 4000px) {
+    #mobile-view {
+        display: none;
+    }
+  }
+
   @media screen and (max-width: 1100px) {
     #logo {
+        display: none;
+    }
+
+    #mobile-view {
         display: none;
     }
   }
@@ -133,6 +148,10 @@ a {
     .dropdown {
         font-size: 20px;
     }
+
+    #mobile-view {
+        display: none;
+    }
   }
 
   @media screen and (max-width: 897px) {
@@ -147,17 +166,17 @@ a {
     .dropdown {
         font-size: 20px;
     }
+
+    #mobile-view {
+        display: none;
+    }
   }
 
-  @media screen and (max-width: 686px) {
+  /* @media screen and (max-width: 686px) {
     #li-3, #li-4 {
         display: none;
     }
 
-    /*img#logo {
-        align-content: center;
-        display: -moz-inline-box;
-    }*/
     nav {
         width: 100%;
     }
@@ -181,10 +200,14 @@ a {
     button{
         font-size: 15px;
     }
-  }
 
-  @media screen and (max-width: 502px) {
-    #li-7, #li-1, #li-2 {
+    #mobile-view {
+        display: none;
+    }
+  } */
+
+  @media screen and (max-width: 730px) {
+    #li-7, #li-1, #li-2, #li-3, #li-4 {
         display: none;
     }
 
@@ -192,6 +215,14 @@ a {
         align-content: center;
         display: -moz-inline-box;
     }*/
+
+    #logo {
+        display: block;
+        align-content: center;
+        align-self: auto;
+        position: relative;
+        align-content: center;
+    }
 
     .zone {
         border-radius: 0;
@@ -202,19 +233,37 @@ a {
         padding: 5%;
         font-size: 15px;
         width: 100%;
+        margin: 0 auto;
     }
 
     #li-5, #li-8, #li-9 {
-        padding-left: 10px;
+        display: none;
+        /*padding-left: 10px;
         padding-top: 15px;
         padding-right: 5px;
         padding-bottom: 0%;
         margin: 0%;
         font-size: 15px;
         font-style: normal;
-        list-style: none;
+        list-style: none;*/
     }
+
+    #mobile-view {
+        display: flex;
+    }
+
+    /* //---------------for carousel > for mobile viewing purpose only > temporary settings >------------------------ */
+
+    /* .carousel-full-div {
+        display: none;
+    }
+
+    .weed-shirt {
+        display: none;
+    } */
+
   }
+
 /*a {
     color: blue;
     background-color: burlywood;
