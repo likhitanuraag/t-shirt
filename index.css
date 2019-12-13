@@ -120,6 +120,14 @@ a {
       height: 30px;
   }
 
+  #mobile-dropdown-container {
+      background-color: black;
+  }
+
+  .dropdown-item {
+      color: orange;
+  }
+
   @media screen and (max-width: 4000px) {
     #mobile-view {
         display: none;
