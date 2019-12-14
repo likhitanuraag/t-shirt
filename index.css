@@ -10,6 +10,7 @@ body {
     border:1px solid rgb(0, 0, 0);
     transition: all 0.3s linear;
     max-width: 100%;
+    margin: 0px auto;
 }
 
 .zone:hover {
@@ -372,9 +373,9 @@ a {
 }*/
 
 .carousel-container{
-    width: 74%; 
+    width: 83%; 
     margin: 0px 0px 0px 0px; 
-    border: 5px solid black;
+    border: 2px solid black;
     overflow: hidden;
     position: relative;
 }
@@ -394,7 +395,7 @@ a {
     z-index: 10px;
     right: 5%;
     font-size: 20px;
-    color: white;
+    color: #007bff;
     opacity: 1;
     cursor: pointer;
     border: none;
@@ -407,7 +408,7 @@ a {
     z-index: 10px;
     left: 5%;
     font-size: 20px;
-    color: white;
+    color: #007bff;
     opacity: 1;
     cursor: pointer;
     border: none;
@@ -432,8 +433,11 @@ a {
 
 .column{
     float: left;
-    width: 33.33%;
-    padding: 5px;
+    height: 400px;
+    width: 400px;
+    padding: none;
+    border: 2px solid black;
+    margin: 0 auto;
 }
 
 .row::after {
